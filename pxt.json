@@ -3,8 +3,8 @@
     "version": "3.0.0",
     "dependencies": {
         "device": "*",
-        "solar_assets": "github:brown-toy-box/solar_assets#v1.0.0",
-        "Timers": "github:microsoft/arcade-timers#v1.1.0"
+        "solar_assets": "github:brown-toy-box/solar_assets",
+        "Timers": "github:microsoft/arcade-timers"
     },
     "files": [
         "main.ts",
