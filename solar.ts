@@ -10,7 +10,6 @@ namespace SpriteKind {
     //% isKind
     export const ReducedSunlight = SpriteKind.create()
 }
-info.setLifeImage(assets_solar.credits)
 info.onLifeZero(function () {
 
 })
@@ -39,6 +38,7 @@ namespace solar {
 
     //% block
     export function setInitialCredits(num: number) {
+        info.setLifeImage(assets_solar.credits)
         initCredits = num
     }
 
