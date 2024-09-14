@@ -1,6 +1,11 @@
 {
     "name": "Solar Powered Stadium",
     "version": "0.0.0",
+    "dependencies": {
+        "device": "*",
+        "solar_assets": "github:brown-toy-box/solar_assets",
+        "Timers": "github:microsoft/arcade-timers"
+    },
     "files": [
         "main.ts",
         "solar.ts"
@@ -8,13 +13,13 @@
     "testFiles": [
         "test.ts"
     ],
+    "testDependencies": {},
+    "targetVersions": {
+        "target": "1.12.56",
+        "targetId": "arcade"
+    },
     "supportedTargets": [
         "arcade"
     ],
-    "dependencies": {
-        "device": "*",
-        "solar_assets": "github:brown-toy-box/solar_assets",
-        "Timers": "github:microsoft/arcade-timers"
-    },
-    "testDependencies": {}
+    "preferredEditor": "tsprj"
 }
