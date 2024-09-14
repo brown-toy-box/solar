@@ -6,7 +6,7 @@
 * secondarycolor: #F392BD
 * tertiarycolor: #83C252
 * highlightcolor: #FAED28
-* alternatesources: github:https://github.com/brown-toy-box/solar-powered-stadium/skillmap.md
+* alternatesources: github:https://github.com/brown-toy-box/solar/skillmap.md
 
 ## main-path
 
@@ -19,7 +19,7 @@
 * description: Set the scene for your game.
 * type: tutorial
 * next: part-2
-* url: https://github.com/brown-toy-box/solar-powered-stadium/tutorial-part-1
+* url: https://github.com/brown-toy-box/solar/tutorial-part-1
 
 ### part-2
 
@@ -27,7 +27,7 @@
 * description: Add the player to your game.
 * type: tutorial
 * next: part-3
-* url: https://github.com/brown-toy-box/solar-powered-stadium/tutorial-part-2
+* url: https://github.com/brown-toy-box/solar/tutorial-part-2
 
 ### part-3
 
@@ -35,7 +35,7 @@
 * description: Build solar panels and capture sunlight.
 * type: tutorial
 * next: part-4
-* url: https://github.com/brown-toy-box/solar-powered-stadium/tutorial-part-3
+* url: https://github.com/brown-toy-box/solar/tutorial-part-3
 
 ### part-4
 
@@ -43,7 +43,7 @@
 * description: Set a timer and limit the number of panels.
 * type: tutorial
 * next: intro-complete
-* url: https://github.com/brown-toy-box/solar-powered-stadium/tutorial-part-4
+* url: https://github.com/brown-toy-box/solar/tutorial-part-4
 
 ### intro-complete
 

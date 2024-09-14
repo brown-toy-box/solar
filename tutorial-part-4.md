@@ -217,5 +217,5 @@ game.onUpdateInterval(100, function () {
 
 ```package
 solar_assets=github:brown-toy-box/solar_assets
-solar=github:brown-toy-box/solar-powered-stadium
+solar=github:brown-toy-box/solar
 ```
