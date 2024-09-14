@@ -1,6 +1,6 @@
 {
     "name": "Solar Powered Stadium",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "device": "*",
         "solar_assets": "github:brown-toy-box/solar_assets#v1.0.0",
