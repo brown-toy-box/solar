@@ -61,11 +61,11 @@ heroSprite.setStayInScreen(true)
 
 ```blocks
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
 // @highlight
-let heroSprite = sprites.create(solar_assets.player1, SpriteKind.Player)
+let heroSprite = sprites.create(assets_solar.player1, SpriteKind.Player)
 // @highlight
 controller.moveSprite(heroSprite)
 // @highlight
@@ -120,14 +120,14 @@ solar.attachShadowToPlayer(shadowSprite, heroSprite)
 
 ```blocks
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
-let heroSprite = sprites.create(solar_assets.player1, SpriteKind.Player)
+let heroSprite = sprites.create(assets_solar.player1, SpriteKind.Player)
 controller.moveSprite(heroSprite)
 heroSprite.setStayInScreen(true)
 // @highlight
-let shadowSprite = sprites.create(solar_assets.smallShadow, SpriteKind.Player)
+let shadowSprite = sprites.create(assets_solar.smallShadow, SpriteKind.Player)
 // @highlight
 solar.attachShadowToPlayer(shadowSprite, heroSprite)
 ```
@@ -142,13 +142,13 @@ Now, the player needs to be able to build solar panels!
 ```template
 let sunlightSprite: Sprite = null
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
 game.onUpdateInterval(100, function () {
     solar.moveSun(sunSprite)
     if (solar.isSunlightMade()) {
-        sunlightSprite = sprites.createProjectileFromSprite(solar_assets.sunlight, sunSprite, 0, 100)
+        sunlightSprite = sprites.createProjectileFromSprite(assets_solar.sunlight, sunSprite, 0, 100)
         sunlightSprite.setKind(SpriteKind.Sunlight)
         sunlightSprite.x += 8 - randint(0, 16)
     }
@@ -158,18 +158,18 @@ game.onUpdateInterval(100, function () {
 ```ghost
 let sunlightSprite: Sprite = null
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
-let heroSprite = sprites.create(solar_assets.player1, SpriteKind.Player)
+let heroSprite = sprites.create(assets_solar.player1, SpriteKind.Player)
 controller.moveSprite(heroSprite)
 heroSprite.setStayInScreen(true)
-let shadowSprite = sprites.create(solar_assets.smallShadow, SpriteKind.Player)
+let shadowSprite = sprites.create(assets_solar.smallShadow, SpriteKind.Player)
 solar.attachShadowToPlayer(shadowSprite, heroSprite)
 game.onUpdateInterval(100, function () {
     solar.moveSun(sunSprite)
     if (solar.isSunlightMade()) {
-        sunlightSprite = sprites.createProjectileFromSprite(solar_assets.sunlight, sunSprite, 0, 100)
+        sunlightSprite = sprites.createProjectileFromSprite(assets_solar.sunlight, sunSprite, 0, 100)
         sunlightSprite.setKind(SpriteKind.Sunlight)
         sunlightSprite.x += 8 - randint(0, 16)
     }
@@ -177,6 +177,6 @@ game.onUpdateInterval(100, function () {
 ```
 
 ```package
-solar_assets=github:brown-toy-box/solar_assets
+assets_solar=github:brown-toy-box/assets_solar
 solar=github:brown-toy-box/solar
 ```

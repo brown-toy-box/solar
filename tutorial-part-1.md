@@ -59,7 +59,7 @@ controller.moveSprite(sunSprite)
 
 ```blocks
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
 controller.moveSprite(sunSprite)
 ```
 
@@ -117,10 +117,10 @@ fieldSprite.top = 60
 
 ```blocks
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
 controller.moveSprite(sunSprite)
 // @highlight
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 // @highlight
 fieldSprite.setPosition(80, 90)
 ```
@@ -237,7 +237,7 @@ let sunSprite: Sprite = null
 game.onUpdateInterval(100, function () {
     solar.moveSun(sunSprite)
     if (solar.isSunlightMade()) {
-        let sunlightSprite = sprites.createProjectileFromSprite(solar_assets.sunlight, sunSprite, 0, 100)
+        let sunlightSprite = sprites.createProjectileFromSprite(assets_solar.sunlight, sunSprite, 0, 100)
         sunlightSprite.setKind(SpriteKind.Sunlight)
     }
 })
@@ -284,7 +284,7 @@ let sunSprite: Sprite = null
 game.onUpdateInterval(100, function () {
     solar.moveSun(sunSprite)
     if (solar.isSunlightMade()) {
-        let sunlightSprite = sprites.createProjectileFromSprite(solar_assets.sunlight, sunSprite, 0, 100)
+        let sunlightSprite = sprites.createProjectileFromSprite(assets_solar.sunlight, sunSprite, 0, 100)
         sunlightSprite.setKind(SpriteKind.Sunlight)
         // @highlight
         sunlightSprite.x += 8 - randint(0, 16)
@@ -301,13 +301,13 @@ Now, let's add the player!
 ```ghost
 let sunlightSprite: Sprite = null
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
 game.onUpdateInterval(100, function () {
     solar.moveSun(sunSprite)
     if (solar.isSunlightMade()) {
-        sunlightSprite = sprites.createProjectileFromSprite(solar_assets.sunlight, sunSprite, 0, 100)
+        sunlightSprite = sprites.createProjectileFromSprite(assets_solar.sunlight, sunSprite, 0, 100)
         sunlightSprite.setKind(SpriteKind.Sunlight)
         sunlightSprite.x += 8 - randint(0, 16)
     }
@@ -315,6 +315,6 @@ game.onUpdateInterval(100, function () {
 ```
 
 ```package
-solar_assets=github:brown-toy-box/solar_assets
+assets_solar=github:brown-toy-box/assets_solar
 solar=github:brown-toy-box/solar
 ```

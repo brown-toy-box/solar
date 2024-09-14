@@ -30,13 +30,13 @@ solar.setInitialCredits(5)
 ```blocks
 let shadowSprite: Sprite = null
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
-let heroSprite = sprites.create(solar_assets.player1, SpriteKind.Player)
+let heroSprite = sprites.create(assets_solar.player1, SpriteKind.Player)
 controller.moveSprite(heroSprite)
 heroSprite.setStayInScreen(true)
-shadowSprite = sprites.create(solar_assets.smallShadow, SpriteKind.Player)
+shadowSprite = sprites.create(assets_solar.smallShadow, SpriteKind.Player)
 solar.attachShadowToPlayer(shadowSprite, heroSprite)
 // @highlight
 solar.setInitialCredits(5)
@@ -65,7 +65,7 @@ View the hint if you need any help.
 ```blocks
 let shadowSprite: Sprite = null
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    let solarPanelSprite: Sprite = sprites.create(solar_assets.smallPanel, SpriteKind.SolarPanel)
+    let solarPanelSprite: Sprite = sprites.create(assets_solar.smallPanel, SpriteKind.SolarPanel)
     solarPanelSprite.setPosition(shadowSprite.x, shadowSprite.y)
     // @highlight
     info.changeLifeBy(-1)
@@ -98,7 +98,7 @@ let shadowSprite: Sprite = null
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     // @highlight
     if (info.life() > 0) {
-        let solarPanelSprite: Sprite = sprites.create(solar_assets.smallPanel, SpriteKind.SolarPanel)
+        let solarPanelSprite: Sprite = sprites.create(assets_solar.smallPanel, SpriteKind.SolarPanel)
         solarPanelSprite.setPosition(shadowSprite.x, shadowSprite.y)
         info.changeLifeBy(-1)
     }
@@ -123,13 +123,13 @@ View the hint if you need any help.
 ```blocks
 let shadowSprite: Sprite = null
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
-let heroSprite = sprites.create(solar_assets.player1, SpriteKind.Player)
+let heroSprite = sprites.create(assets_solar.player1, SpriteKind.Player)
 controller.moveSprite(heroSprite)
 heroSprite.setStayInScreen(true)
-shadowSprite = sprites.create(solar_assets.smallShadow, SpriteKind.Player)
+shadowSprite = sprites.create(assets_solar.smallShadow, SpriteKind.Player)
 solar.attachShadowToPlayer(shadowSprite, heroSprite)
 solar.setInitialCredits(5)
 solar.setupDay(1)
@@ -153,25 +153,25 @@ sprites.onOverlap(SpriteKind.Sunlight, SpriteKind.SolarPanel, function (sprite, 
     info.changeScoreBy(1)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    solarPanelSprite = sprites.create(solar_assets.smallPanel, SpriteKind.SolarPanel)
+    solarPanelSprite = sprites.create(assets_solar.smallPanel, SpriteKind.SolarPanel)
     solarPanelSprite.setPosition(shadowSprite.x, shadowSprite.y)
 })
 let sunlightSprite: Sprite = null
 let solarPanelSprite: Sprite = null
 let shadowSprite: Sprite = null
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let lawnSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let lawnSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 lawnSprite.setPosition(80, 90)
-let heroSprite = sprites.create(solar_assets.player1, SpriteKind.Player)
+let heroSprite = sprites.create(assets_solar.player1, SpriteKind.Player)
 controller.moveSprite(heroSprite)
 heroSprite.setStayInScreen(true)
-shadowSprite = sprites.create(solar_assets.smallShadow, SpriteKind.Player)
+shadowSprite = sprites.create(assets_solar.smallShadow, SpriteKind.Player)
 solar.attachShadowToPlayer(shadowSprite, heroSprite)
 game.onUpdateInterval(100, function () {
     solar.moveSun(sunSprite)
     if (solar.isSunlightMade()) {
-        sunlightSprite = sprites.createProjectileFromSprite(solar_assets.sunlight, sunSprite, 0, 100)
+        sunlightSprite = sprites.createProjectileFromSprite(assets_solar.sunlight, sunSprite, 0, 100)
         sunlightSprite.setKind(SpriteKind.Sunlight)
         sunlightSprite.x += 8 - randint(0, 16)
     }
@@ -185,7 +185,7 @@ sprites.onOverlap(SpriteKind.Sunlight, SpriteKind.SolarPanel, function (sprite, 
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (info.life() > 0) {
-        solarPanelSprite = sprites.create(solar_assets.smallPanel, SpriteKind.SolarPanel)
+        solarPanelSprite = sprites.create(assets_solar.smallPanel, SpriteKind.SolarPanel)
         solarPanelSprite.setPosition(shadowSprite.x, shadowSprite.y)
         info.changeLifeBy(-1)
     }
@@ -194,13 +194,13 @@ let sunlightSprite: Sprite = null
 let solarPanelSprite: Sprite = null
 let shadowSprite: Sprite = null
 scene.setBackgroundColor(9)
-let sunSprite = sprites.create(solar_assets.sun, SpriteKind.Scenery)
-let fieldSprite = sprites.create(solar_assets.field, SpriteKind.Scenery)
+let sunSprite = sprites.create(assets_solar.sun, SpriteKind.Scenery)
+let fieldSprite = sprites.create(assets_solar.field, SpriteKind.Scenery)
 fieldSprite.setPosition(80, 90)
-let heroSprite = sprites.create(solar_assets.player1, SpriteKind.Player)
+let heroSprite = sprites.create(assets_solar.player1, SpriteKind.Player)
 controller.moveSprite(heroSprite)
 heroSprite.setStayInScreen(true)
-shadowSprite = sprites.create(solar_assets.smallShadow, SpriteKind.Player)
+shadowSprite = sprites.create(assets_solar.smallShadow, SpriteKind.Player)
 solar.attachShadowToPlayer(shadowSprite, heroSprite)
 solar.setInitialCredits(5)
 solar.setupDay(1)
@@ -208,7 +208,7 @@ solar.startDay()
 game.onUpdateInterval(100, function () {
     solar.moveSun(sunSprite)
     if (solar.isSunlightMade()) {
-        sunlightSprite = sprites.createProjectileFromSprite(solar_assets.sunlight, sunSprite, 0, 100)
+        sunlightSprite = sprites.createProjectileFromSprite(assets_solar.sunlight, sunSprite, 0, 100)
         sunlightSprite.setKind(SpriteKind.Sunlight)
         sunlightSprite.x += 8 - randint(0, 16)
     }
@@ -216,6 +216,6 @@ game.onUpdateInterval(100, function () {
 ```
 
 ```package
-solar_assets=github:brown-toy-box/solar_assets
+assets_solar=github:brown-toy-box/assets_solar
 solar=github:brown-toy-box/solar
 ```
