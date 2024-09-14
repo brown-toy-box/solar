@@ -4,7 +4,7 @@
     "dependencies": {
         "device": "*",
         "Timers": "github:microsoft/arcade-timers",
-        "assets_solar": "github:brown-toy-box/solar_assets"
+        "assets_solar": "github:brown-toy-box/assets_solar"
     },
     "files": [
         "main.ts",
