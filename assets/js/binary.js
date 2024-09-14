@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.0.4","target":"arcade","targetVersion":"1.12.56","repo":"brown-toy-box/solar"}
-// total=1767644 new=6.85% cached=88.19% other=4.96%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.0.5","target":"arcade","targetVersion":"1.12.56","repo":"brown-toy-box/solar"}
+// total=1767662 new=6.85% cached=88.19% other=4.96%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -530,7 +530,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P685698(s) {
+function _main___P686423(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -975,36 +975,31 @@ switch (step) {
     s.callLocIdx = 64; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
-    globals.Scenery___665633 = (r0);
+    globals.Scenery___686180 = (r0);
     s.tmp_0 = SpriteKind_create__P663756_mk(s);
     s.callLocIdx = 65; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
-    globals.SolarPanel___665634 = (r0);
+    globals.SolarPanel___686183 = (r0);
     s.tmp_0 = SpriteKind_create__P663756_mk(s);
     s.callLocIdx = 66; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
-    globals.Sunlight___665635 = (r0);
+    globals.Sunlight___686186 = (r0);
     s.tmp_0 = SpriteKind_create__P663756_mk(s);
     s.callLocIdx = 67; s.pc = 41; return s.tmp_0;
   case 41:
     r0 = s.retval;
-    globals.Cloud___665636 = (r0);
+    globals.Cloud___686189 = (r0);
     s.tmp_0 = SpriteKind_create__P663756_mk(s);
     s.callLocIdx = 68; s.pc = 42; return s.tmp_0;
   case 42:
     r0 = s.retval;
-    globals.ReducedSunlight___665637 = (r0);
-    s.tmp_0 = info_setLifeImage__P663862_mk(s);
-    s.tmp_0.arg0 = globals.credits___665614;
+    globals.ReducedSunlight___686192 = (r0);
+    s.tmp_0 = info_onLifeZero__P663855_mk(s);
+    s.tmp_0.arg0 = inline__P686195;
     s.callLocIdx = 69; s.pc = 43; return s.tmp_0;
   case 43:
-    r0 = s.retval;
-    s.tmp_0 = info_onLifeZero__P663855_mk(s);
-    s.tmp_0.arg0 = inline__P668331;
-    s.callLocIdx = 70; s.pc = 44; return s.tmp_0;
-  case 44:
     r0 = s.retval;
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
@@ -1015,118 +1010,118 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, globals.cloud4___665624);
     r0 = pxsim_Array__push(s.tmp_0, globals.cloud5___665623);
     r0 = pxsim_Array__push(s.tmp_0, globals.cloud6___665626);
-    globals.CLOUDS___668339 = (s.tmp_0);
-    globals.initCredits___668348 = (0);
-    globals.ticks___668350 = (0);
-    globals.yesterdayScore___668352 = (0);
-    globals.runtimeStart___668354 = (0);
+    globals.CLOUDS___686203 = (s.tmp_0);
+    globals.initCredits___686212 = (0);
+    globals.ticks___686214 = (0);
+    globals.yesterdayScore___686216 = (0);
+    globals.runtimeStart___686218 = (0);
     s.tmp_0 = controller_Button_onEvent__P663473_mk(s);
     s.tmp_0.arg0 = globals.A___663390;
     s.tmp_0.arg1 = 2049;
     s.tmp_0.arg2 = inline__P668491;
-    s.callLocIdx = 94; s.pc = 45; return s.tmp_0;
-  case 45:
+    s.callLocIdx = 94; s.pc = 44; return s.tmp_0;
+  case 44:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P663735_mk(s);
-    s.tmp_0.arg0 = globals.Sunlight___665635;
-    s.tmp_0.arg1 = globals.SolarPanel___665634;
+    s.tmp_0.arg0 = globals.Sunlight___686186;
+    s.tmp_0.arg1 = globals.SolarPanel___686183;
     s.tmp_0.arg2 = inline__P668515;
-    s.callLocIdx = 97; s.pc = 46; return s.tmp_0;
-  case 46:
+    s.callLocIdx = 97; s.pc = 45; return s.tmp_0;
+  case 45:
     r0 = s.retval;
     globals.sunlightSprite___668524 = (null);
     globals.solarPanelSprite___668496 = (null);
     globals.shadowSprite___668505 = (null);
     s.tmp_0 = scene_setBackgroundColor__P664160_mk(s);
     s.tmp_0.arg0 = 9;
-    s.callLocIdx = 98; s.pc = 47; return s.tmp_0;
-  case 47:
+    s.callLocIdx = 98; s.pc = 46; return s.tmp_0;
+  case 46:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P663552_mk(s);
     s.tmp_0.arg0 = globals.sun___665617;
-    s.tmp_0.arg1 = globals.Scenery___665633;
-    s.callLocIdx = 99; s.pc = 48; return s.tmp_0;
-  case 48:
+    s.tmp_0.arg1 = globals.Scenery___686180;
+    s.callLocIdx = 99; s.pc = 47; return s.tmp_0;
+  case 47:
     r0 = s.retval;
     globals.sunSprite___668527 = (r0);
     s.tmp_0 = sprites_create__P663552_mk(s);
     s.tmp_0.arg0 = globals.field___665616;
-    s.tmp_0.arg1 = globals.Scenery___665633;
-    s.callLocIdx = 100; s.pc = 49; return s.tmp_0;
-  case 49:
+    s.tmp_0.arg1 = globals.Scenery___686180;
+    s.callLocIdx = 100; s.pc = 48; return s.tmp_0;
+  case 48:
     r0 = s.retval;
     globals.lawnSprite___668532 = (r0);
     s.tmp_0 = Sprite_setPosition__P663686_mk(s);
     s.tmp_0.arg0 = globals.lawnSprite___668532;
     s.tmp_0.arg1 = 80;
     s.tmp_0.arg2 = 90;
-    s.callLocIdx = 101; s.pc = 50; return s.tmp_0;
-  case 50:
+    s.callLocIdx = 101; s.pc = 49; return s.tmp_0;
+  case 49:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P663552_mk(s);
     s.tmp_0.arg0 = globals.player1___665628;
     s.tmp_0.arg1 = globals.Player___663757;
-    s.callLocIdx = 102; s.pc = 51; return s.tmp_0;
-  case 51:
+    s.callLocIdx = 102; s.pc = 50; return s.tmp_0;
+  case 50:
     r0 = s.retval;
     globals.heroSprite___668539 = (r0);
     s.tmp_0 = controller_moveSprite__P663444_mk(s);
     s.tmp_0.arg0 = globals.heroSprite___668539;
     s.tmp_0.arg1 = 100;
     s.tmp_0.arg2 = 100;
-    s.callLocIdx = 103; s.pc = 52; return s.tmp_0;
-  case 52:
+    s.callLocIdx = 103; s.pc = 51; return s.tmp_0;
+  case 51:
     r0 = s.retval;
     s.tmp_0 = Sprite_setStayInScreen__P663694_mk(s);
     s.tmp_0.arg0 = globals.heroSprite___668539;
     s.tmp_0.arg1 = true;
-    s.callLocIdx = 104; s.pc = 53; return s.tmp_0;
-  case 53:
+    s.callLocIdx = 104; s.pc = 52; return s.tmp_0;
+  case 52:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P663552_mk(s);
     s.tmp_0.arg0 = globals.smallShadow___665629;
     s.tmp_0.arg1 = globals.Player___663757;
-    s.callLocIdx = 105; s.pc = 54; return s.tmp_0;
-  case 54:
+    s.callLocIdx = 105; s.pc = 53; return s.tmp_0;
+  case 53:
     r0 = s.retval;
     globals.shadowSprite___668505 = (r0);
-    s.tmp_0 = solar_attachShadowToPlayer__P665641_mk(s);
+    s.tmp_0 = solar_attachShadowToPlayer__P686259_mk(s);
     s.tmp_0.arg0 = globals.shadowSprite___668505;
     s.tmp_0.arg1 = globals.heroSprite___668539;
-    s.callLocIdx = 106; s.pc = 55; return s.tmp_0;
+    s.callLocIdx = 106; s.pc = 54; return s.tmp_0;
+  case 54:
+    r0 = s.retval;
+    s.tmp_0 = solar_setInitialCredits__P686219_mk(s);
+    s.tmp_0.arg0 = 5;
+    s.callLocIdx = 107; s.pc = 55; return s.tmp_0;
   case 55:
     r0 = s.retval;
-    s.tmp_0 = solar_setInitialCredits__P665639_mk(s);
-    s.tmp_0.arg0 = 5;
-    s.callLocIdx = 107; s.pc = 56; return s.tmp_0;
+    s.tmp_0 = solar_setupDay__P686311_mk(s);
+    s.tmp_0.arg0 = 1;
+    s.callLocIdx = 108; s.pc = 56; return s.tmp_0;
   case 56:
     r0 = s.retval;
-    s.tmp_0 = solar_setupDay__P665643_mk(s);
-    s.tmp_0.arg0 = 1;
-    s.callLocIdx = 108; s.pc = 57; return s.tmp_0;
+    s.tmp_0 = solar_startDay__P686326_mk(s);
+    s.callLocIdx = 109; s.pc = 57; return s.tmp_0;
   case 57:
-    r0 = s.retval;
-    s.tmp_0 = solar_startDay__P665644_mk(s);
-    s.callLocIdx = 109; s.pc = 58; return s.tmp_0;
-  case 58:
     r0 = s.retval;
     s.tmp_0 = game_onUpdateInterval__P664301_mk(s);
     s.tmp_0.arg0 = 100;
     s.tmp_0.arg1 = inline__P668558;
-    s.callLocIdx = 116; s.pc = 59; return s.tmp_0;
-  case 59:
+    s.callLocIdx = 116; s.pc = 58; return s.tmp_0;
+  case 58:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P685698.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P685698.continuations = [  ]
+_main___P686423.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P686423.continuations = [  ]
 
-function _main___P685698_mk(s) {
+function _main___P686423_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P685698, depth: s.depth + 1,
+        parent: s, fn: _main___P686423, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1680,7 +1675,7 @@ function gameOverConfig_inline__P666232_mk(s) {
 
 
 
-function inline__P668331(s) {
+function inline__P686195(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1694,12 +1689,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P668331.info = {"start":401,"length":16,"line":13,"column":16,"endLine":15,"endColumn":1,"fileName":"solar.ts","functionName":"inline","argumentNames":[]}
+inline__P686195.info = {"start":361,"length":16,"line":12,"column":16,"endLine":14,"endColumn":1,"fileName":"solar.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P668331_mk(s) {
+function inline__P686195_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P668331, depth: s.depth + 1,
+        parent: s, fn: inline__P686195, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -1728,7 +1723,7 @@ switch (step) {
     if (!r0) { step = 1; continue; }
     s.tmp_3 = sprites_create__P663552_mk(s);
     s.tmp_3.arg0 = globals.smallPanel___665615;
-    s.tmp_3.arg1 = globals.SolarPanel___665634;
+    s.tmp_3.arg1 = globals.SolarPanel___686183;
     s.callLocIdx = 89; s.pc = 4; return s.tmp_3;
   case 4:
     r0 = s.retval;
@@ -1835,12 +1830,12 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.tmp_0 = solar_moveSun__P665640_mk(s);
+    s.tmp_0 = solar_moveSun__P686225_mk(s);
     s.tmp_0.arg0 = globals.sunSprite___668527;
     s.callLocIdx = 110; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    s.tmp_1 = solar_isSunlightMade__P665642_mk(s);
+    s.tmp_1 = solar_isSunlightMade__P686292_mk(s);
     s.callLocIdx = 111; s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -1858,7 +1853,7 @@ switch (step) {
     globals.sunlightSprite___668524 = (r0);
     s.tmp_0 = Sprite_setKind__P663685_mk(s);
     s.tmp_0.arg0 = globals.sunlightSprite___668524;
-    s.tmp_0.arg1 = globals.Sunlight___665635;
+    s.tmp_0.arg1 = globals.Sunlight___686186;
     s.callLocIdx = 113; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
@@ -3202,7 +3197,7 @@ function Sprite_vx__P663635_mk(s) {
 
 
 
-function solar_isSunlightMade__P665642(s) {
+function solar_isSunlightMade__P686292(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3212,25 +3207,25 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.delta___668423 = undefined;
-    s.chance___668428 = undefined;
+    s.delta___686293 = undefined;
+    s.chance___686298 = undefined;
     s.tmp_0 = Math_abs__P661404_mk(s);
-    r0 = (globals.ticks___668350 - 12000);
+    r0 = (globals.ticks___686214 - 12000);
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 80; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
-    s.delta___668423 = (r0);
-    r0 = (12000 - s.delta___668423);
+    s.delta___686293 = (r0);
+    r0 = (12000 - s.delta___686293);
     s.tmp_2 = r0;
     r0 = (90 * s.tmp_2);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 / 12000);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 + 10);
-    s.chance___668428 = (r0);
+    s.chance___686298 = (r0);
     s.tmp_1 = Math_percentChance__P664334_mk(s);
-    s.tmp_1.arg0 = s.chance___668428;
+    s.tmp_1.arg0 = s.chance___686298;
     s.callLocIdx = 81; s.pc = 5; return s.tmp_1;
   case 5:
     r0 = s.retval;
@@ -3249,18 +3244,18 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-solar_isSunlightMade__P665642.info = {"start":1875,"length":294,"line":66,"column":4,"endLine":74,"endColumn":5,"fileName":"solar.ts","functionName":"isSunlightMade","argumentNames":[]}
+solar_isSunlightMade__P686292.info = {"start":1883,"length":294,"line":66,"column":4,"endLine":74,"endColumn":5,"fileName":"solar.ts","functionName":"isSunlightMade","argumentNames":[]}
 
-function solar_isSunlightMade__P665642_mk(s) {
+function solar_isSunlightMade__P686292_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: solar_isSunlightMade__P665642, depth: s.depth + 1,
+        parent: s, fn: solar_isSunlightMade__P686292, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
-  delta___668423: undefined,
-  chance___668428: undefined,
+  delta___686293: undefined,
+  chance___686298: undefined,
 } }
 
 
@@ -3367,7 +3362,7 @@ function Math_abs__P661404_mk(s) {
 
 
 
-function solar_moveSun__P665640(s) {
+function solar_moveSun__P686225(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3377,8 +3372,8 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.sunX___668364 = undefined;
-    s.sunY___668372 = undefined;
+    s.sunX___686232 = undefined;
+    s.sunY___686240 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
@@ -3388,32 +3383,32 @@ switch (step) {
   case 1:
     r0 = s.retval;
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 - globals.runtimeStart___668354);
-    globals.ticks___668350 = (r0);
-    r0 = (160 * globals.ticks___668350);
+    r0 = (s.tmp_0 - globals.runtimeStart___686218);
+    globals.ticks___686214 = (r0);
+    r0 = (160 * globals.ticks___686214);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 / 24000);
     s.tmp_0 = r0;
     r0 = (160 - s.tmp_0);
-    s.sunX___668364 = (r0);
-    r0 = (s.sunX___668364 * s.sunX___668364);
+    s.sunX___686232 = (r0);
+    r0 = (s.sunX___686232 * s.sunX___686232);
     s.tmp_3 = r0;
     r0 = (7 * s.tmp_3);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 / 640);
     s.tmp_1 = r0;
-    r0 = (7 * s.sunX___668364);
+    r0 = (7 * s.sunX___686232);
     s.tmp_5 = r0;
     r0 = (s.tmp_5 / 4);
     s.tmp_4 = r0;
     r0 = (s.tmp_1 - s.tmp_4);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 + 70);
-    s.sunY___668372 = (r0);
+    s.sunY___686240 = (r0);
     s.tmp_0 = Sprite_setPosition__P663686_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.sunX___668364;
-    s.tmp_0.arg2 = s.sunY___668372;
+    s.tmp_0.arg1 = s.sunX___686232;
+    s.tmp_0.arg2 = s.sunY___686240;
     s.callLocIdx = 72; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
@@ -3421,12 +3416,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-solar_moveSun__P665640.info = {"start":1144,"length":264,"line":45,"column":4,"endLine":50,"endColumn":5,"fileName":"solar.ts","functionName":"moveSun","argumentNames":["theSun"]}
+solar_moveSun__P686225.info = {"start":1152,"length":264,"line":45,"column":4,"endLine":50,"endColumn":5,"fileName":"solar.ts","functionName":"moveSun","argumentNames":["theSun"]}
 
-function solar_moveSun__P665640_mk(s) {
+function solar_moveSun__P686225_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: solar_moveSun__P665640, depth: s.depth + 1,
+        parent: s, fn: solar_moveSun__P686225, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3434,8 +3429,8 @@ function solar_moveSun__P665640_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  sunX___668364: undefined,
-  sunY___668372: undefined,
+  sunX___686232: undefined,
+  sunY___686240: undefined,
   arg0: undefined,
 } }
 
@@ -5002,7 +4997,7 @@ function control_EventHandler_register_inline__P669232_mk(s) {
 
 
 
-function solar_startDay__P665644(s) {
+function solar_startDay__P686326(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -5016,7 +5011,7 @@ switch (step) {
     s.callLocIdx = 86; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.runtimeStart___668354 = (r0);
+    globals.runtimeStart___686218 = (r0);
     s.tmp_0 = info_startCountdown__P663858_mk(s);
     r0 = pxsim.Math_.idiv(24000, 1000);
     s.tmp_0.arg0 = r0;
@@ -5027,12 +5022,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-solar_startDay__P665644.info = {"start":2485,"length":132,"line":88,"column":4,"endLine":91,"endColumn":5,"fileName":"solar.ts","functionName":"startDay","argumentNames":[]}
+solar_startDay__P686326.info = {"start":2493,"length":132,"line":88,"column":4,"endLine":91,"endColumn":5,"fileName":"solar.ts","functionName":"startDay","argumentNames":[]}
 
-function solar_startDay__P665644_mk(s) {
+function solar_startDay__P686326_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: solar_startDay__P665644, depth: s.depth + 1,
+        parent: s, fn: solar_startDay__P686326, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -24949,7 +24944,7 @@ function helpers_arrayForEach__P661385_mk(s) {
 
 
 
-function solar_setupDay__P665643(s) {
+function solar_setupDay__P686311(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -24968,7 +24963,7 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
     s.tmp_1 = info_setLife__P663853_mk(s);
-    s.tmp_1.arg0 = globals.initCredits___668348;
+    s.tmp_1.arg0 = globals.initCredits___686212;
     s.callLocIdx = 82; s.pc = 3; return s.tmp_1;
   case 3:
     r0 = s.retval;
@@ -24980,7 +24975,7 @@ switch (step) {
   case 5:
     r0 = s.retval;
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 - globals.yesterdayScore___668352);
+    r0 = (s.tmp_2 - globals.yesterdayScore___686216);
     s.tmp_1 = r0;
     r0 = pxsim.Math_.idiv(s.tmp_1, 10);
     s.tmp_0.arg0 = r0;
@@ -24992,17 +24987,17 @@ switch (step) {
     s.callLocIdx = 85; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
-    globals.yesterdayScore___668352 = (r0);
+    globals.yesterdayScore___686216 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-solar_setupDay__P665643.info = {"start":2211,"length":254,"line":78,"column":4,"endLine":85,"endColumn":5,"fileName":"solar.ts","functionName":"setupDay","argumentNames":["theDay"]}
+solar_setupDay__P686311.info = {"start":2219,"length":254,"line":78,"column":4,"endLine":85,"endColumn":5,"fileName":"solar.ts","functionName":"setupDay","argumentNames":["theDay"]}
 
-function solar_setupDay__P665643_mk(s) {
+function solar_setupDay__P686311_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: solar_setupDay__P665643, depth: s.depth + 1,
+        parent: s, fn: solar_setupDay__P686311, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -25246,7 +25241,7 @@ function info_PlayerInfoImpl_life__P663887_mk(s) {
 
 
 
-function solar_setInitialCredits__P665639(s) {
+function solar_setInitialCredits__P686219(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25260,18 +25255,24 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    globals.initCredits___668348 = (s.arg0);
+    s.tmp_0 = info_setLifeImage__P663862_mk(s);
+    s.tmp_0.arg0 = globals.credits___665614;
+    s.callLocIdx = 70; s.pc = 1; return s.tmp_0;
+  case 1:
+    r0 = s.retval;
+    globals.initCredits___686212 = (s.arg0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-solar_setInitialCredits__P665639.info = {"start":1018,"length":80,"line":40,"column":4,"endLine":42,"endColumn":5,"fileName":"solar.ts","functionName":"setInitialCredits","argumentNames":["num"]}
+solar_setInitialCredits__P686219.info = {"start":978,"length":128,"line":39,"column":4,"endLine":42,"endColumn":5,"fileName":"solar.ts","functionName":"setInitialCredits","argumentNames":["num"]}
 
-function solar_setInitialCredits__P665639_mk(s) {
+function solar_setInitialCredits__P686219_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: solar_setInitialCredits__P665639, depth: s.depth + 1,
+        parent: s, fn: solar_setInitialCredits__P686219, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
   arg0: undefined,
 } }
 
@@ -25279,7 +25280,47 @@ function solar_setInitialCredits__P665639_mk(s) {
 
 
 
-function solar_attachShadowToPlayer__P665641(s) {
+function info_setLifeImage__P663862(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    s.tmp_0 = info_updateFlag__P666154_mk(s);
+    s.tmp_0.arg0 = 32;
+    s.tmp_0.arg1 = true;
+    s.callLocIdx = 944; s.pc = 1; return s.tmp_0;
+  case 1:
+    r0 = s.retval;
+    r0 = (globals.infoState___666104).fields["heartImage"] = (s.arg0);
+    r0 = undefined;
+    return leave(s, r0)
+  default: oops()
+} } }
+info_setLifeImage__P663862.info = {"start":14756,"length":141,"line":490,"column":4,"endLine":493,"endColumn":5,"fileName":"pxt_modules/game/info.ts","functionName":"setLifeImage","argumentNames":["image"]}
+
+function info_setLifeImage__P663862_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: info_setLifeImage__P663862, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function solar_attachShadowToPlayer__P686259(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25336,7 +25377,7 @@ switch (step) {
     r0 = s.retval;
   case 3:
   case 4:
-    r0 = pxsim_pxtcore_mkAction(2, solar_attachShadowToPlayer_inline__P668407);
+    r0 = pxsim_pxtcore_mkAction(2, solar_attachShadowToPlayer_inline__P686276);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 1, s.arg1);
@@ -25349,12 +25390,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-solar_attachShadowToPlayer__P665641.info = {"start":1470,"length":365,"line":53,"column":4,"endLine":63,"endColumn":5,"fileName":"solar.ts","functionName":"attachShadowToPlayer","argumentNames":["shadow","player"]}
+solar_attachShadowToPlayer__P686259.info = {"start":1478,"length":365,"line":53,"column":4,"endLine":63,"endColumn":5,"fileName":"solar.ts","functionName":"attachShadowToPlayer","argumentNames":["shadow","player"]}
 
-function solar_attachShadowToPlayer__P665641_mk(s) {
+function solar_attachShadowToPlayer__P686259_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: solar_attachShadowToPlayer__P665641, depth: s.depth + 1,
+        parent: s, fn: solar_attachShadowToPlayer__P686259, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -25369,7 +25410,7 @@ function solar_attachShadowToPlayer__P665641_mk(s) {
 
 
 
-function solar_attachShadowToPlayer_inline__P668407(s) {
+function solar_attachShadowToPlayer_inline__P686276(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -25420,12 +25461,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-solar_attachShadowToPlayer_inline__P668407.info = {"start":1659,"length":169,"line":57,"column":22,"endLine":62,"endColumn":9,"fileName":"solar.ts","functionName":"inline","argumentNames":[]}
+solar_attachShadowToPlayer_inline__P686276.info = {"start":1667,"length":169,"line":57,"column":22,"endLine":62,"endColumn":9,"fileName":"solar.ts","functionName":"inline","argumentNames":[]}
 
-function solar_attachShadowToPlayer_inline__P668407_mk(s) {
+function solar_attachShadowToPlayer_inline__P686276_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: solar_attachShadowToPlayer_inline__P668407, depth: s.depth + 1,
+        parent: s, fn: solar_attachShadowToPlayer_inline__P686276, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -30826,46 +30867,6 @@ function info_PlayerInfoImpl_onLifeZero__P663891_mk(s) {
   state___676781: undefined,
   arg0: undefined,
   arg1: undefined,
-} }
-
-
-
-
-
-function info_setLifeImage__P663862(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    s.tmp_0 = info_updateFlag__P666154_mk(s);
-    s.tmp_0.arg0 = 32;
-    s.tmp_0.arg1 = true;
-    s.callLocIdx = 944; s.pc = 1; return s.tmp_0;
-  case 1:
-    r0 = s.retval;
-    r0 = (globals.infoState___666104).fields["heartImage"] = (s.arg0);
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-info_setLifeImage__P663862.info = {"start":14756,"length":141,"line":490,"column":4,"endLine":493,"endColumn":5,"fileName":"pxt_modules/game/info.ts","functionName":"setLifeImage","argumentNames":["image"]}
-
-function info_setLifeImage__P663862_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: info_setLifeImage__P663862, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  arg0: undefined,
 } }
 
 
@@ -59030,7 +59031,7 @@ const sprites_BaseSpriteSayRenderer__C663536_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["Scenery___665633","SolarPanel___665634","Sunlight___665635","Cloud___665636","ReducedSunlight___665637","CLOUDS___668339","solarPanelSprite___668496","shadowSprite___668505","sunSprite___668527","lawnSprite___668532","heroSprite___668539","sunlightSprite___668524","ticks___668350","runtimeStart___668354","initCredits___668348","yesterdayScore___668352"])
+const breakpoints = setupDebugger(1, ["Scenery___686180","SolarPanel___686183","Sunlight___686186","Cloud___686189","ReducedSunlight___686192","CLOUDS___686203","solarPanelSprite___668496","shadowSprite___668505","sunSprite___668527","lawnSprite___668532","heroSprite___668539","sunlightSprite___668524","ticks___686214","runtimeStart___686218","initCredits___686212","yesterdayScore___686216"])
 
-return _main___P685698
+return _main___P686423
 })
