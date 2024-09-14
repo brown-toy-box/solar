@@ -10,7 +10,7 @@ namespace SpriteKind {
     //% isKind
     export const ReducedSunlight = SpriteKind.create()
 }
-info.setLifeImage(solar_assets.credits)
+info.setLifeImage(assets_solar.credits)
 info.onLifeZero(function () {
 
 })
@@ -20,13 +20,13 @@ namespace solar {
     const TICKS_PER_DAY: number = 24000
     const MIDDAY_TICKS: number = TICKS_PER_DAY / 2
     const CLOUDS: Image[] = [
-        solar_assets.cloud0,
-        solar_assets.cloud1,
-        solar_assets.cloud2,
-        solar_assets.cloud3,
-        solar_assets.cloud4,
-        solar_assets.cloud5,
-        solar_assets.cloud6,
+        assets_solar.cloud0,
+        assets_solar.cloud1,
+        assets_solar.cloud2,
+        assets_solar.cloud3,
+        assets_solar.cloud4,
+        assets_solar.cloud5,
+        assets_solar.cloud6,
     ]
     let initCredits: number = 0
     let ticks: number = 0
