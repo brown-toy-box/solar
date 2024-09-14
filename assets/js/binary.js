@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.0.2","target":"arcade","targetVersion":"1.12.56","repo":"brown-toy-box/solar"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"3.0.3","target":"arcade","targetVersion":"1.12.56","repo":"brown-toy-box/solar"}
 // total=1767644 new=6.85% cached=88.19% other=4.96%
 (function (ectx) {
 'use strict';
@@ -530,7 +530,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P656477(s) {
+function _main___P656800(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1120,13 +1120,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P656477.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P656477.continuations = [  ]
+_main___P656800.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P656800.continuations = [  ]
 
-function _main___P656477_mk(s) {
+function _main___P656800_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P656477, depth: s.depth + 1,
+        parent: s, fn: _main___P656800, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -59032,5 +59032,5 @@ const sprites_BaseSpriteSayRenderer__C634320_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["Scenery___639103","SolarPanel___639106","Sunlight___639109","Cloud___639112","ReducedSunlight___639115","CLOUDS___639128","solarPanelSprite___639292","shadowSprite___639301","sunSprite___639323","lawnSprite___639328","heroSprite___639335","sunlightSprite___639320","ticks___639139","runtimeStart___639143","initCredits___639137","yesterdayScore___639141"])
 
-return _main___P656477
+return _main___P656800
 })
