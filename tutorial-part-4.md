@@ -139,7 +139,7 @@ solar.startDay()
 
 ## Finish @showdialog
 
-Congratulations! You've finished the game!
+Congratulations! You've finished the introductory game!
 
 Now, try to get the highest score!
 

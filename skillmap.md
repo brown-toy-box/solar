@@ -50,3 +50,34 @@
 * name: End of introduction.
 * type: certificate
 * kind: completion
+* next: part-5
+
+### part-5
+
+* name: Intermediate Part 1
+* description: Get ready for multiple days!
+* type: tutorial
+* next: part-6
+* url: https://github.com/brown-toy-box/solar/tutorial-part-5
+
+### part-6
+
+* name: Intermediate Part 2
+* description: Set your game to run for three days.
+* type: tutorial
+* next: part-7
+* url: https://github.com/brown-toy-box/solar/tutorial-part-6
+
+### part-7
+
+* name: Intermediate Part 3
+* description: Add clouds that affect sunlight.
+* type: tutorial
+* next: intermediate-complete
+* url: https://github.com/brown-toy-box/solar/tutorial-part-7
+
+### intermediate-complete
+
+* name: End of intermediate.
+* type: certificate
+* kind: completion
