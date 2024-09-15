@@ -81,3 +81,26 @@
 * name: End of intermediate.
 * type: certificate
 * kind: completion
+* next: part-8
+
+### part-8
+
+* name: Advanced Part 1
+* description: Swap the shadow and get ready to build large solar panels.
+* type: tutorial
+* next: part-9
+* url: https://github.com/brown-toy-box/solar/tutorial-part-8
+
+### part-9
+
+* name: Advanced Part 2
+* description: Build large solar panels and play with sound effects.
+* type: tutorial
+* next: advanced-complete
+* url: https://github.com/brown-toy-box/solar/tutorial-part-9
+
+### advanced-complete
+
+* name: End of advanced.
+* type: certificate
+* kind: completion
