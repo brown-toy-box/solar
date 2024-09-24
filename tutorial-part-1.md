@@ -294,7 +294,7 @@ game.onUpdateInterval(100, function () {
 
 ## Finish @showdialog
 
-Congratulations, you complete the scenery for your game.
+Congratulations, you completed the scenery for your game.
 
 Now, let's add the player!
 
